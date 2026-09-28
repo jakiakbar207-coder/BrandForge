@@ -1,0 +1,37 @@
+.verifikasi-page {
+    background: #f8fafc;
+}
+
+.verifikasi-checklist {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.verifikasi-check-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    border-radius: 8px;
+    background: #f8fafc;
+    color: #475569;
+    font-size: 13px;
+}
+
+.verifikasi-check-item i {
+    color: #16a34a;
+    font-size: 17px;
+}
+
+.verifikasi-warning {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    background: #fef3c7;
+    color: #b45309;
+    font-size: 13px;
+}

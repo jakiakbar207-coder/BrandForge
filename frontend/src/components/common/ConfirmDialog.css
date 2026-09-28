@@ -1,0 +1,112 @@
+.common-dialog-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(15, 23, 42, 0.45);
+}
+
+.common-confirm-dialog {
+    width: 100%;
+    max-width: 400px;
+    padding: 26px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    box-shadow: 0 20px 50px rgba(15, 23, 42, 0.18);
+    text-align: center;
+}
+
+.common-confirm-icon {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+    border-radius: 50%;
+    background: #fff7ed;
+    color: #ea580c;
+    font-size: 22px;
+}
+
+.common-confirm-content h3 {
+    margin: 0;
+    color: #1e293b;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.common-confirm-content p {
+    margin: 8px 0 0;
+    color: #64748b;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.common-confirm-actions {
+    display: flex;
+    justify-content: center;
+    gap: 9px;
+    margin-top: 22px;
+}
+
+.common-confirm-actions button {
+    min-width: 105px;
+    height: 38px;
+    padding: 0 14px;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition:
+        background 0.18s ease,
+        border-color 0.18s ease,
+        color 0.18s ease;
+}
+
+.common-confirm-cancel {
+    border: 1px solid #e2e8f0;
+    background: #ffffff;
+    color: #64748b;
+}
+
+.common-confirm-cancel:hover:not(:disabled) {
+    background: #f8fafc;
+    border-color: #cbd5e1;
+    color: #334155;
+}
+
+.common-confirm-submit {
+    border: 1px solid #dc2626;
+    background: #dc2626;
+    color: #ffffff;
+}
+
+.common-confirm-submit:hover:not(:disabled) {
+    border-color: #b91c1c;
+    background: #b91c1c;
+}
+
+.common-confirm-actions button:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+}
+
+@media (max-width: 480px) {
+    .common-confirm-dialog {
+        padding: 22px;
+    }
+
+    .common-confirm-actions {
+        flex-direction: column-reverse;
+    }
+
+    .common-confirm-actions button {
+        width: 100%;
+    }
+}

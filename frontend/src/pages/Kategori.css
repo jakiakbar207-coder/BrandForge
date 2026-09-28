@@ -1,0 +1,223 @@
+.kategori-page {
+    width: 100%;
+    min-height: 100%;
+    color: #1e293b;
+}
+
+.kategori-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 24px;
+}
+
+.kategori-breadcrumb {
+    margin-bottom: 8px;
+    color: #94a3b8;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.kategori-header h1 {
+    margin: 0;
+    color: #0f172a;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.kategori-header p {
+    margin: 7px 0 0;
+    color: #64748b;
+    font-size: 13px;
+}
+
+.kategori-add-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 40px;
+    padding: 0 16px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.kategori-add-button:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 12px rgba(37, 99, 235, 0.2);
+}
+
+.kategori-add-button:active {
+    transform: translateY(0);
+}
+
+.kategori-add-button i {
+    font-size: 14px;
+}
+
+.kategori-card {
+    overflow: hidden;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+}
+
+.kategori-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 18px 20px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.kategori-search {
+    position: relative;
+    width: 320px;
+}
+
+.kategori-search i {
+    position: absolute;
+    top: 50%;
+    left: 13px;
+    z-index: 1;
+    color: #94a3b8;
+    font-size: 14px;
+    transform: translateY(-50%);
+}
+
+.kategori-search input {
+    width: 100%;
+    height: 38px;
+    padding: 0 13px 0 36px;
+    border: 1px solid #dbe2ea;
+    border-radius: 8px;
+    outline: none;
+    background: #ffffff;
+    color: #334155;
+    font-size: 13px;
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.kategori-search input::placeholder {
+    color: #a1aab8;
+}
+
+.kategori-search input:focus {
+    border-color: #93c5fd;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.08);
+}
+
+.kategori-total {
+    color: #64748b;
+    font-size: 12px;
+}
+
+.kategori-total strong {
+    color: #1e293b;
+    font-weight: 700;
+}
+
+.kategori-pagination {
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px 20px;
+    border-top: 1px solid #e5e7eb;
+}
+
+.kategori-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.kategori-form-group label {
+    color: #334155;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.kategori-form-group label span {
+    margin-left: 3px;
+    color: #dc2626;
+}
+
+.kategori-form-group input {
+    width: 100%;
+    min-height: 42px;
+    padding: 0 12px;
+    border: 1px solid #dbe2ea;
+    border-radius: 8px;
+    outline: none;
+    background: #ffffff;
+    color: #334155;
+    font-size: 13px;
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.kategori-form-group input::placeholder {
+    color: #a1aab8;
+}
+
+.kategori-form-group input:focus {
+    border-color: #93c5fd;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.08);
+}
+
+.kategori-form-group input:disabled {
+    background: #f8fafc;
+    cursor: not-allowed;
+}
+
+.kategori-loading {
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .kategori-header {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .kategori-add-button {
+        align-self: flex-start;
+    }
+
+    .kategori-toolbar {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .kategori-search {
+        width: 100%;
+    }
+
+    .kategori-total {
+        text-align: left;
+    }
+
+    .kategori-pagination {
+        justify-content: center;
+        overflow-x: auto;
+    }
+}

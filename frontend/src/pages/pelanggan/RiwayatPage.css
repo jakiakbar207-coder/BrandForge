@@ -1,0 +1,490 @@
+.riwayat-page {
+    min-height: 100vh;
+    padding: 30px;
+    background: #f8fafc;
+}
+
+.riwayat-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.riwayat-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 25px;
+    margin-bottom: 28px;
+}
+
+.riwayat-label {
+    display: block;
+    margin-bottom: 6px;
+    color: #64748b;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.riwayat-header h1 {
+    margin: 0 0 8px;
+    color: #111827;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.riwayat-header p {
+    margin: 0;
+    color: #64748b;
+    font-size: 14px;
+}
+
+.riwayat-shop-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 44px;
+    padding: 0 18px;
+    border-radius: 9px;
+    background: #111827;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.riwayat-shop-button:hover {
+    background: #374151;
+    color: #ffffff;
+}
+
+.riwayat-summary {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    margin-bottom: 25px;
+}
+
+.riwayat-summary-card {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding: 18px;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    background: #ffffff;
+    box-shadow: 0 4px 15px rgba(15, 23, 42, 0.04);
+}
+
+.riwayat-summary-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 43px;
+    height: 43px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #f1f5f9;
+    color: #475569;
+    font-size: 18px;
+}
+
+.riwayat-summary-card span {
+    display: block;
+    margin-bottom: 4px;
+    color: #64748b;
+    font-size: 11px;
+}
+
+.riwayat-summary-card strong {
+    color: #111827;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.riwayat-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.riwayat-card {
+    overflow: hidden;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    background: #ffffff;
+    box-shadow: 0 4px 15px rgba(15, 23, 42, 0.04);
+}
+
+.riwayat-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 17px 22px;
+    border-bottom: 1px solid #eef2f7;
+}
+
+.riwayat-code {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.riwayat-code span {
+    color: #64748b;
+    font-size: 11px;
+}
+
+.riwayat-code strong {
+    color: #111827;
+    font-size: 13px;
+}
+
+.riwayat-status {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 28px;
+    padding: 0 11px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.riwayat-status-pending {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.riwayat-status-process {
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+
+.riwayat-status-success {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.riwayat-status-danger {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+.riwayat-card-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    padding: 22px;
+}
+
+.riwayat-product {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    min-width: 0;
+}
+
+.riwayat-product-image {
+    width: 82px;
+    height: 82px;
+    flex: 0 0 82px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #f1f5f9;
+}
+
+.riwayat-product-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.riwayat-product-info {
+    min-width: 0;
+}
+
+.riwayat-product-info > span {
+    display: block;
+    margin-bottom: 5px;
+    color: #64748b;
+    font-size: 11px;
+}
+
+.riwayat-product-info h2 {
+    margin: 0 0 6px;
+    overflow: hidden;
+    color: #111827;
+    font-size: 15px;
+    font-weight: 600;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.riwayat-product-info p {
+    margin: 0;
+    color: #64748b;
+    font-size: 12px;
+}
+
+.riwayat-product-info small {
+    display: block;
+    margin-top: 3px;
+    color: #94a3b8;
+    font-size: 11px;
+}
+
+.riwayat-total {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex-shrink: 0;
+    text-align: right;
+}
+
+.riwayat-total span {
+    color: #64748b;
+    font-size: 11px;
+}
+
+.riwayat-total strong {
+    color: #111827;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.riwayat-card-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 14px 22px;
+    border-top: 1px solid #eef2f7;
+    background: #f8fafc;
+}
+
+.riwayat-date {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #64748b;
+    font-size: 12px;
+}
+
+.riwayat-date i {
+    color: #475569;
+}
+
+.riwayat-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.riwayat-tracking-button,
+.riwayat-payment-button,
+.riwayat-delete-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    min-height: 36px;
+    padding: 0 13px;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.riwayat-tracking-button {
+    border: 1px solid #dbe1e8;
+    background: #ffffff;
+    color: #475569;
+}
+
+.riwayat-tracking-button:hover {
+    border-color: #64748b;
+    color: #111827;
+}
+
+.riwayat-payment-button {
+    border: 1px solid #111827;
+    background: #111827;
+    color: #ffffff;
+}
+
+.riwayat-payment-button:hover {
+    background: #374151;
+    color: #ffffff;
+}
+
+.riwayat-delete-button {
+    border: 1px solid #fecaca;
+    background: #ffffff;
+    color: #dc2626;
+}
+
+.riwayat-delete-button:hover:not(:disabled) {
+    border-color: #dc2626;
+    background: #fef2f2;
+}
+
+.riwayat-delete-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.riwayat-empty {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 430px;
+    padding: 40px 20px;
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+    background: #ffffff;
+    text-align: center;
+}
+
+.riwayat-empty-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    background: #f1f5f9;
+    color: #475569;
+    font-size: 31px;
+}
+
+.riwayat-empty h2 {
+    margin: 0 0 8px;
+    color: #111827;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.riwayat-empty p {
+    margin: 0 0 22px;
+    color: #64748b;
+    font-size: 14px;
+}
+
+.riwayat-empty-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 42px;
+    padding: 0 18px;
+    border-radius: 9px;
+    background: #111827;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.riwayat-empty-button:hover {
+    background: #374151;
+    color: #ffffff;
+}
+
+@media (max-width: 850px) {
+    .riwayat-summary {
+        grid-template-columns: 1fr;
+    }
+
+    .riwayat-card-content {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .riwayat-total {
+        width: 100%;
+        text-align: left;
+    }
+}
+
+@media (max-width: 700px) {
+    .riwayat-page {
+        padding: 20px;
+    }
+
+    .riwayat-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .riwayat-shop-button {
+        width: 100%;
+    }
+
+    .riwayat-card-bottom {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .riwayat-actions {
+        width: 100%;
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 500px) {
+    .riwayat-page {
+        padding: 15px;
+    }
+
+    .riwayat-header h1 {
+        font-size: 27px;
+    }
+
+    .riwayat-card-top {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 16px;
+    }
+
+    .riwayat-card-content {
+        padding: 17px;
+    }
+
+    .riwayat-card-bottom {
+        padding: 14px 17px;
+    }
+
+    .riwayat-product-image {
+        width: 70px;
+        height: 70px;
+        flex-basis: 70px;
+    }
+
+    .riwayat-product-info h2 {
+        font-size: 14px;
+    }
+
+    .riwayat-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .riwayat-tracking-button,
+    .riwayat-payment-button,
+    .riwayat-delete-button {
+        width: 100%;
+    }
+}

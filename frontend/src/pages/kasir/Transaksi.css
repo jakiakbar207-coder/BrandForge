@@ -1,0 +1,769 @@
+.transaksi-page {
+    padding: 24px;
+    min-height: 100%;
+    background: #f8fafc;
+}
+
+.transaksi-page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 24px;
+}
+
+.transaksi-page-header h1 {
+    margin: 0 0 6px;
+    color: #0f172a;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.transaksi-page-header p {
+    margin: 0;
+    color: #64748b;
+    font-size: 14px;
+}
+
+.transaksi-header-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.transaksi-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+}
+
+.transaksi-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 18px;
+}
+
+.transaksi-card-header h2 {
+    margin: 0;
+    color: #0f172a;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.transaksi-card-header span {
+    color: #64748b;
+    font-size: 13px;
+}
+
+.transaksi-primary-button,
+.transaksi-secondary-button,
+.transaksi-refresh-button,
+.transaksi-submit-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.transaksi-primary-button {
+    background: #2563eb;
+    color: #ffffff;
+}
+
+.transaksi-primary-button:hover {
+    background: #1d4ed8;
+}
+
+.transaksi-secondary-button {
+    background: #e2e8f0;
+    color: #334155;
+}
+
+.transaksi-secondary-button:hover {
+    background: #cbd5e1;
+}
+
+.transaksi-refresh-button {
+    background: #f1f5f9;
+    color: #334155;
+}
+
+.transaksi-refresh-button:hover {
+    background: #e2e8f0;
+}
+
+.transaksi-submit-button {
+    width: 100%;
+    background: #16a34a;
+    color: #ffffff;
+    padding: 13px 18px;
+}
+
+.transaksi-submit-button:hover {
+    background: #15803d;
+}
+
+.transaksi-submit-button:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+}
+
+.transaksi-search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 42px;
+    padding: 0 13px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background: #ffffff;
+    margin-bottom: 18px;
+}
+
+.transaksi-search i {
+    color: #64748b;
+    font-size: 16px;
+}
+
+.transaksi-search input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #0f172a;
+    font-size: 14px;
+}
+
+.transaksi-search input::placeholder {
+    color: #94a3b8;
+}
+
+.transaksi-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.transaksi-toolbar .transaksi-search {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+.transaksi-action-buttons {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.transaksi-action-button {
+    width: 34px;
+    height: 34px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.transaksi-action-button.detail {
+    background: #dbeafe;
+    color: #2563eb;
+}
+
+.transaksi-action-button.detail:hover {
+    background: #bfdbfe;
+}
+
+.transaksi-action-button.delete {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.transaksi-action-button.delete:hover {
+    background: #fecaca;
+}
+
+.transaksi-pagination {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 18px;
+}
+
+.transaksi-create-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.4fr) minmax(350px, 0.9fr);
+    gap: 20px;
+    align-items: start;
+}
+
+.transaksi-product-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-height: 480px;
+    overflow-y: auto;
+}
+
+.transaksi-product-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 14px;
+    border: 1px solid #e2e8f0;
+    border-radius: 9px;
+    background: #ffffff;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.transaksi-product-item:hover {
+    border-color: #93c5fd;
+    background: #f8fbff;
+}
+
+.transaksi-product-item.selected {
+    border-color: #2563eb;
+    background: #eff6ff;
+}
+
+.transaksi-product-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.transaksi-product-info strong {
+    color: #0f172a;
+    font-size: 14px;
+}
+
+.transaksi-product-info span,
+.transaksi-product-price span {
+    color: #64748b;
+    font-size: 12px;
+}
+
+.transaksi-product-price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+    white-space: nowrap;
+}
+
+.transaksi-product-price strong {
+    color: #2563eb;
+    font-size: 14px;
+}
+
+.transaksi-selected-product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 18px;
+    padding: 16px;
+    border-radius: 9px;
+    background: #f1f5f9;
+}
+
+.transaksi-selected-product > div:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.transaksi-selected-product strong {
+    color: #0f172a;
+    font-size: 14px;
+}
+
+.transaksi-selected-product span {
+    color: #64748b;
+    font-size: 12px;
+}
+
+.transaksi-quantity-control {
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+.transaksi-quantity-control label {
+    display: block;
+    margin-bottom: 8px;
+    color: #475569;
+    font-size: 12px;
+}
+
+.transaksi-quantity-control input {
+    width: 70px;
+    height: 40px;
+    padding: 0 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    outline: none;
+}
+
+.transaksi-cart-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.transaksi-cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 14px;
+    border: 1px solid #e2e8f0;
+    border-radius: 9px;
+}
+
+.transaksi-cart-item-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 0;
+}
+
+.transaksi-cart-item-info strong {
+    color: #0f172a;
+    font-size: 14px;
+}
+
+.transaksi-cart-item-info span {
+    color: #64748b;
+    font-size: 12px;
+}
+
+.transaksi-cart-item-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.transaksi-cart-item-actions input {
+    width: 65px;
+    height: 36px;
+    padding: 0 8px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    outline: none;
+}
+
+.transaksi-cart-item-actions > strong {
+    min-width: 100px;
+    color: #2563eb;
+    text-align: right;
+    font-size: 13px;
+}
+
+.transaksi-icon-danger {
+    width: 34px;
+    height: 34px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 7px;
+    background: #fee2e2;
+    color: #dc2626;
+    cursor: pointer;
+}
+
+.transaksi-icon-danger:hover {
+    background: #fecaca;
+}
+
+.transaksi-summary {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+    padding-top: 18px;
+    border-top: 1px solid #e2e8f0;
+}
+
+.transaksi-summary > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.transaksi-summary span {
+    color: #64748b;
+    font-size: 13px;
+}
+
+.transaksi-summary strong {
+    color: #0f172a;
+    font-size: 15px;
+}
+
+.transaksi-payment-input {
+    display: flex !important;
+    flex-direction: column;
+    align-items: stretch !important;
+    gap: 7px !important;
+}
+
+.transaksi-payment-input label {
+    color: #475569;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.transaksi-payment-input input {
+    width: 100%;
+    height: 42px;
+    box-sizing: border-box;
+    padding: 0 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+}
+
+.transaksi-payment-input input:focus,
+.transaksi-quantity-control input:focus,
+.transaksi-cart-item-actions input:focus {
+    border-color: #2563eb;
+}
+
+.transaksi-payment-warning {
+    justify-content: flex-start !important;
+    color: #dc2626 !important;
+    font-size: 13px;
+}
+
+.transaksi-empty-cart,
+.transaksi-empty-products {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    min-height: 180px;
+    padding: 20px;
+    color: #64748b;
+    text-align: center;
+}
+
+.transaksi-empty-cart i,
+.transaksi-empty-products i {
+    color: #94a3b8;
+    font-size: 36px;
+}
+
+.transaksi-empty-cart strong {
+    color: #334155;
+    font-size: 14px;
+}
+
+.transaksi-empty-cart span,
+.transaksi-empty-products span {
+    font-size: 13px;
+}
+
+.transaksi-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.transaksi-info-grid > div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 13px;
+    border-radius: 8px;
+    background: #f8fafc;
+}
+
+.transaksi-info-grid span {
+    color: #64748b;
+    font-size: 12px;
+}
+
+.transaksi-info-grid strong {
+    color: #0f172a;
+    font-size: 14px;
+}
+
+.transaksi-detail-grid {
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    gap: 20px;
+}
+
+.transaksi-detail-summary {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
+}
+
+.transaksi-detail-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.transaksi-detail-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.transaksi-detail-table th {
+    padding: 12px;
+    border-bottom: 1px solid #e2e8f0;
+    background: #f8fafc;
+    color: #475569;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.transaksi-detail-table td {
+    padding: 13px 12px;
+    border-bottom: 1px solid #f1f5f9;
+    color: #475569;
+    font-size: 13px;
+}
+
+.transaksi-detail-table td strong {
+    color: #0f172a;
+}
+
+.transaksi-status {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px !important;
+    font-weight: 600;
+}
+
+.transaksi-status.success {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.transaksi-status.warning {
+    background: #fef3c7;
+    color: #b45309;
+}
+
+.transaksi-verification-actions {
+    margin-top: 20px;
+}
+
+.transaksi-link-button {
+    border: none;
+    background: transparent;
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.transaksi-link-button:hover {
+    text-decoration: underline;
+}
+
+.transaksi-success-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 48px);
+}
+
+.transaksi-success-card {
+    width: min(500px, 100%);
+    padding: 40px;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    background: #ffffff;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(15, 23, 42, 0.08);
+}
+
+.transaksi-success-icon {
+    width: 76px;
+    height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: #dcfce7;
+    color: #16a34a;
+    font-size: 38px;
+}
+
+.transaksi-success-card h1 {
+    margin: 0 0 8px;
+    color: #0f172a;
+    font-size: 25px;
+}
+
+.transaksi-success-card > p {
+    margin: 0 0 25px;
+    color: #64748b;
+    font-size: 14px;
+}
+
+.transaksi-success-code,
+.transaksi-success-total {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 14px;
+    margin-bottom: 12px;
+    border-radius: 9px;
+    background: #f8fafc;
+}
+
+.transaksi-success-code span,
+.transaksi-success-total span {
+    color: #64748b;
+    font-size: 12px;
+}
+
+.transaksi-success-code strong {
+    color: #0f172a;
+    font-size: 15px;
+}
+
+.transaksi-success-total strong {
+    color: #16a34a;
+    font-size: 20px;
+}
+
+.transaksi-success-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 22px;
+}
+
+.transaksi-success-actions .transaksi-primary-button,
+.transaksi-success-actions .transaksi-secondary-button {
+    width: 100%;
+}
+
+@media (max-width: 1000px) {
+    .transaksi-create-layout,
+    .transaksi-detail-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 700px) {
+    .transaksi-page {
+        padding: 15px;
+    }
+
+    .transaksi-page-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .transaksi-header-actions {
+        width: 100%;
+    }
+
+    .transaksi-header-actions button {
+        flex: 1;
+    }
+
+    .transaksi-toolbar {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .transaksi-toolbar .transaksi-search {
+        width: 100%;
+    }
+
+    .transaksi-product-item,
+    .transaksi-cart-item,
+    .transaksi-selected-product {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .transaksi-product-price {
+        align-items: flex-start;
+    }
+
+    .transaksi-quantity-control {
+        width: 100%;
+        align-items: flex-end;
+    }
+
+    .transaksi-quantity-control input {
+        flex: 1;
+    }
+
+    .transaksi-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .transaksi-cart-item-actions {
+        width: 100%;
+    }
+
+    .transaksi-cart-item-actions input {
+        flex: 1;
+    }
+
+    .transaksi-cart-item-actions > strong {
+        min-width: auto;
+    }
+
+    .transaksi-success-card {
+        padding: 25px 18px;
+    }
+}
+
+@media print {
+    .transaksi-page-header,
+    .pembayaran-page-actions,
+    .struk-page-actions,
+    .transaksi-success-actions {
+        display: none !important;
+    }
+
+    .transaksi-page {
+        padding: 0;
+        background: #ffffff;
+    }
+
+    .transaksi-card {
+        border: none;
+        box-shadow: none;
+    }
+}

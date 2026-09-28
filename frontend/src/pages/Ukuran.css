@@ -1,0 +1,232 @@
+.ukuran-page {
+    width: 100%;
+    min-height: 100%;
+    color: #1e293b;
+}
+
+.ukuran-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 24px;
+}
+
+.ukuran-breadcrumb {
+    margin-bottom: 8px;
+    color: #94a3b8;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.ukuran-header h1 {
+    margin: 0;
+    color: #0f172a;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.ukuran-header p {
+    margin: 7px 0 0;
+    color: #64748b;
+    font-size: 13px;
+}
+
+.ukuran-add-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 40px;
+    padding: 0 16px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.ukuran-add-button:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 12px rgba(37, 99, 235, 0.2);
+}
+
+.ukuran-add-button:active {
+    transform: translateY(0);
+}
+
+.ukuran-add-button i {
+    font-size: 14px;
+}
+
+.ukuran-card {
+    overflow: hidden;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.ukuran-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 18px 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.ukuran-search {
+    position: relative;
+    width: 320px;
+}
+
+.ukuran-search i {
+    position: absolute;
+    top: 50%;
+    left: 13px;
+    z-index: 1;
+    color: #94a3b8;
+    font-size: 14px;
+    transform: translateY(-50%);
+}
+
+.ukuran-search input {
+    width: 100%;
+    height: 38px;
+    padding: 0 13px 0 36px;
+    border: 1px solid #dbe2ea;
+    border-radius: 8px;
+    outline: none;
+    background: #ffffff;
+    color: #334155;
+    font-size: 13px;
+    box-sizing: border-box;
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.ukuran-search input::placeholder {
+    color: #a1aab8;
+}
+
+.ukuran-search input:focus {
+    border-color: #93c5fd;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.08);
+}
+
+.ukuran-total {
+    color: #64748b;
+    font-size: 12px;
+}
+
+.ukuran-total strong {
+    color: #1e293b;
+    font-weight: 700;
+}
+
+.ukuran-pagination {
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px 0;
+    border-top: 1px solid #e5e7eb;
+}
+
+.ukuran-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 18px;
+}
+
+.ukuran-form-group:last-child {
+    margin-bottom: 0;
+}
+
+.ukuran-form-group label {
+    color: #334155;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.ukuran-form-group label span {
+    margin-left: 3px;
+    color: #dc2626;
+}
+
+.ukuran-form-group input {
+    width: 100%;
+    min-height: 42px;
+    padding: 0 12px;
+    border: 1px solid #dbe2ea;
+    border-radius: 8px;
+    outline: none;
+    background: #ffffff;
+    color: #334155;
+    font-size: 13px;
+    box-sizing: border-box;
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.ukuran-form-group input::placeholder {
+    color: #a1aab8;
+}
+
+.ukuran-form-group input:focus {
+    border-color: #93c5fd;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.08);
+}
+
+.ukuran-form-group input:disabled {
+    background: #f8fafc;
+    color: #64748b;
+    cursor: not-allowed;
+}
+
+.ukuran-form-group small {
+    color: #94a3b8;
+    font-size: 11px;
+}
+
+.ukuran-loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 300px;
+}
+
+@media (max-width: 768px) {
+    .ukuran-header {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .ukuran-add-button {
+        align-self: flex-start;
+    }
+
+    .ukuran-toolbar {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .ukuran-search {
+        width: 100%;
+    }
+
+    .ukuran-pagination {
+        justify-content: center;
+        overflow-x: auto;
+    }
+}

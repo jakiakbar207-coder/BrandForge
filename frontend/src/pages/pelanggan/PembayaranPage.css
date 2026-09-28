@@ -1,0 +1,524 @@
+.pembayaran-page {
+    min-height: 100vh;
+    padding: 30px;
+    background: #f8fafc;
+}
+
+.pembayaran-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.pembayaran-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.pembayaran-label {
+    display: block;
+    margin-bottom: 6px;
+    color: #64748b;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.pembayaran-header h1 {
+    margin: 0 0 8px;
+    color: #111827;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.pembayaran-header p {
+    margin: 0;
+    color: #64748b;
+    font-size: 14px;
+}
+
+.pembayaran-back-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 44px;
+    padding: 0 18px;
+    border: 1px solid #e5e7eb;
+    border-radius: 9px;
+    background: #ffffff;
+    color: #475569;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.pembayaran-back-button:hover {
+    border-color: #111827;
+    color: #111827;
+}
+
+.pembayaran-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 380px;
+    align-items: start;
+    gap: 25px;
+}
+
+.pembayaran-main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pembayaran-section {
+    padding: 25px;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    background: #ffffff;
+    box-shadow: 0 4px 15px rgba(15, 23, 42, 0.04);
+}
+
+.pembayaran-section-header {
+    margin-bottom: 22px;
+}
+
+.pembayaran-section-header > div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.pembayaran-section-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: #111827;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.pembayaran-section-header h2 {
+    margin: 0;
+    color: #111827;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.pembayaran-section-header p {
+    margin: 4px 0 0;
+    color: #64748b;
+    font-size: 12px;
+}
+
+.pembayaran-order-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 17px;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    background: #f8fafc;
+}
+
+.pembayaran-order-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.pembayaran-order-row span {
+    color: #64748b;
+    font-size: 13px;
+}
+
+.pembayaran-order-row strong {
+    color: #111827;
+    font-size: 13px;
+    text-align: right;
+}
+
+.pembayaran-status {
+    padding: 5px 10px;
+    border-radius: 20px;
+    background: #f1f5f9;
+    color: #475569 !important;
+    font-size: 11px !important;
+}
+
+.pembayaran-product-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 18px;
+}
+
+.pembayaran-product-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 15px;
+    border: 1px solid #eef2f7;
+    border-radius: 11px;
+    background: #ffffff;
+}
+
+.pembayaran-product-info {
+    min-width: 0;
+}
+
+.pembayaran-product-info > span {
+    display: block;
+    margin-bottom: 5px;
+    color: #64748b;
+    font-size: 11px;
+}
+
+.pembayaran-product-info h3 {
+    margin: 0 0 6px;
+    color: #111827;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.pembayaran-product-info p {
+    margin: 0;
+    color: #64748b;
+    font-size: 12px;
+}
+
+.pembayaran-product-item > strong {
+    flex-shrink: 0;
+    color: #111827;
+    font-size: 14px;
+}
+
+.pembayaran-upload-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.pembayaran-upload-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 220px;
+    padding: 30px;
+    border: 2px dashed #cbd5e1;
+    border-radius: 14px;
+    background: #f8fafc;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.pembayaran-upload-box:hover {
+    border-color: #64748b;
+    background: #f1f5f9;
+}
+
+.pembayaran-upload-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 65px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    background: #e2e8f0;
+    color: #475569;
+    font-size: 27px;
+}
+
+.pembayaran-upload-box strong {
+    margin-bottom: 6px;
+    color: #111827;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.pembayaran-upload-box span {
+    color: #64748b;
+    font-size: 12px;
+}
+
+.pembayaran-upload-box input {
+    display: none;
+}
+
+.pembayaran-file-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 12px 14px;
+    border: 1px solid #e2e8f0;
+    border-radius: 9px;
+    background: #f8fafc;
+}
+
+.pembayaran-file-info > div {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    min-width: 0;
+}
+
+.pembayaran-file-info i {
+    color: #475569;
+    font-size: 17px;
+}
+
+.pembayaran-file-info span {
+    overflow: hidden;
+    color: #334155;
+    font-size: 12px;
+    font-weight: 500;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.pembayaran-file-info button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    border: 0;
+    border-radius: 7px;
+    background: #e2e8f0;
+    color: #475569;
+    cursor: pointer;
+}
+
+.pembayaran-file-info button:hover {
+    background: #cbd5e1;
+}
+
+.pembayaran-upload-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    min-height: 46px;
+    padding: 0 16px;
+    border: 0;
+    border-radius: 9px;
+    background: #111827;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.pembayaran-upload-button:hover:not(:disabled) {
+    background: #374151;
+}
+
+.pembayaran-upload-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.pembayaran-sidebar {
+    min-width: 0;
+}
+
+.pembayaran-summary {
+    position: sticky;
+    top: 20px;
+    padding: 25px;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    background: #ffffff;
+    box-shadow: 0 4px 15px rgba(15, 23, 42, 0.04);
+}
+
+.pembayaran-summary h2 {
+    margin: 0 0 22px;
+    color: #111827;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.pembayaran-summary-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.pembayaran-summary-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.pembayaran-summary-row span {
+    color: #64748b;
+    font-size: 13px;
+}
+
+.pembayaran-summary-row strong {
+    color: #334155;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: right;
+}
+
+.pembayaran-summary-divider {
+    width: 100%;
+    height: 1px;
+    margin: 19px 0;
+    background: #e5e7eb;
+}
+
+.pembayaran-summary-total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 22px;
+}
+
+.pembayaran-summary-total span {
+    color: #111827;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.pembayaran-summary-total strong {
+    color: #111827;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: right;
+}
+
+.pembayaran-bank-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 15px;
+    border-radius: 11px;
+    background: #f8fafc;
+}
+
+.pembayaran-bank-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
+    border-radius: 9px;
+    background: #e2e8f0;
+    color: #475569;
+}
+
+.pembayaran-bank-card strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #111827;
+    font-size: 13px;
+}
+
+.pembayaran-bank-card p {
+    margin: 0;
+    color: #64748b;
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+.pembayaran-secure-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-top: 20px;
+    padding-top: 18px;
+    border-top: 1px solid #eef2f7;
+    color: #64748b;
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+.pembayaran-secure-info i {
+    margin-top: 2px;
+    color: #475569;
+}
+
+@media (max-width: 1050px) {
+    .pembayaran-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .pembayaran-summary {
+        position: static;
+    }
+}
+
+@media (max-width: 700px) {
+    .pembayaran-page {
+        padding: 20px;
+    }
+
+    .pembayaran-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .pembayaran-back-button {
+        width: 100%;
+    }
+
+    .pembayaran-section {
+        padding: 19px;
+    }
+
+    .pembayaran-product-item {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .pembayaran-product-item > strong {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .pembayaran-page {
+        padding: 15px;
+    }
+
+    .pembayaran-header h1 {
+        font-size: 27px;
+    }
+
+    .pembayaran-section {
+        padding: 16px;
+    }
+
+    .pembayaran-upload-box {
+        min-height: 190px;
+        padding: 20px;
+    }
+
+    .pembayaran-summary {
+        padding: 18px;
+    }
+}

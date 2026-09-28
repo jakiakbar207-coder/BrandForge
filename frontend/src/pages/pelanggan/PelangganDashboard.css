@@ -1,0 +1,510 @@
+.pelanggan-dashboard {
+    min-height: 100vh;
+    padding: 25px 30px 40px;
+    background: #f8fafc;
+}
+
+.pelanggan-dashboard-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.pelanggan-dashboard-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    min-height: 70px;
+    padding: 0 24px;
+    margin-bottom: 25px;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    background: #ffffff;
+    box-shadow: 0 4px 15px rgba(15, 23, 42, 0.04);
+}
+
+.pelanggan-dashboard-brand {
+    flex: 0 0 auto;
+}
+
+.pelanggan-dashboard-brand a {
+    color: #111827;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.pelanggan-dashboard-nav {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.pelanggan-dashboard-nav a {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    min-height: 42px;
+    padding: 0 13px;
+    border-radius: 8px;
+    color: #64748b;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+
+.pelanggan-dashboard-nav a:hover {
+    background: #f8fafc;
+    color: #111827;
+}
+
+.pelanggan-dashboard-nav a.active {
+    background: #111827;
+    color: #ffffff;
+}
+
+.pelanggan-dashboard-nav a i {
+    font-size: 15px;
+}
+
+.pelanggan-nav-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 18px;
+    height: 18px;
+    padding: 0 5px;
+    border-radius: 20px;
+    background: #ef4444;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.pelanggan-welcome {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    min-height: 250px;
+    padding: 40px;
+    margin-bottom: 25px;
+    overflow: hidden;
+    border: 1px solid #e5e7eb;
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 0 5px 20px rgba(15, 23, 42, 0.04);
+}
+
+.pelanggan-welcome-content {
+    max-width: 700px;
+}
+
+.pelanggan-welcome-label {
+    display: block;
+    margin-bottom: 8px;
+    color: #64748b;
+    font-size: 14px;
+}
+
+.pelanggan-welcome h1 {
+    margin: 0 0 12px;
+    color: #111827;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.pelanggan-welcome p {
+    max-width: 650px;
+    margin: 0 0 25px;
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.pelanggan-main-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 44px;
+    padding: 0 20px;
+    border-radius: 9px;
+    background: #111827;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.pelanggan-main-button:hover {
+    background: #374151;
+    color: #ffffff;
+}
+
+.pelanggan-welcome-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    flex: 0 0 150px;
+    border-radius: 50%;
+    background: #f1f5f9;
+    color: #334155;
+}
+
+.pelanggan-welcome-icon i {
+    font-size: 65px;
+}
+
+.pelanggan-stat-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    margin-bottom: 45px;
+}
+
+.pelanggan-stat-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    border: 1px solid #e5e7eb;
+    border-radius: 15px;
+    background: #ffffff;
+    color: inherit;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(15, 23, 42, 0.04);
+    transition: 0.2s ease;
+}
+
+.pelanggan-stat-card:hover {
+    transform: translateY(-2px);
+    color: inherit;
+    border-color: #cbd5e1;
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+}
+
+.pelanggan-stat-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    flex: 0 0 48px;
+    border-radius: 10px;
+    background: #f1f5f9;
+    color: #334155;
+}
+
+.pelanggan-stat-icon i {
+    font-size: 20px;
+}
+
+.pelanggan-stat-card span {
+    display: block;
+    margin-bottom: 4px;
+    color: #64748b;
+    font-size: 12px;
+}
+
+.pelanggan-stat-card strong {
+    display: block;
+    color: #111827;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.pelanggan-stat-arrow {
+    margin-left: auto;
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+.pelanggan-section {
+    margin-bottom: 50px;
+}
+
+.pelanggan-section-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 18px;
+}
+
+.pelanggan-section-header span {
+    display: block;
+    margin-bottom: 5px;
+    color: #64748b;
+    font-size: 13px;
+}
+
+.pelanggan-section-header h2 {
+    margin: 0;
+    color: #111827;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.pelanggan-section-header a {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: #111827;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.pelanggan-section-header a:hover {
+    color: #475569;
+}
+
+.pelanggan-product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.pelanggan-product-card {
+    overflow: hidden;
+    border: 1px solid #e5e7eb;
+    border-radius: 15px;
+    background: #ffffff;
+    box-shadow: 0 4px 15px rgba(15, 23, 42, 0.04);
+    transition: 0.2s ease;
+}
+
+.pelanggan-product-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+}
+
+.pelanggan-product-image {
+    position: relative;
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+    background: #f1f5f9;
+}
+
+.pelanggan-product-image > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s ease;
+}
+
+.pelanggan-product-card:hover
+.pelanggan-product-image
+> img {
+    transform: scale(1.03);
+}
+
+.pelanggan-product-no-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 8px;
+    color: #94a3b8;
+}
+
+.pelanggan-product-no-image i {
+    font-size: 40px;
+}
+
+.pelanggan-product-no-image span {
+    font-size: 12px;
+}
+
+.pelanggan-wishlist-button {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    border: 1px solid #e5e7eb;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.95);
+    color: #334155;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.pelanggan-wishlist-button:hover {
+    border-color: #111827;
+    background: #111827;
+    color: #ffffff;
+}
+
+.pelanggan-product-content {
+    padding: 16px;
+}
+
+.pelanggan-product-category {
+    display: block;
+    margin-bottom: 6px;
+    color: #64748b;
+    font-size: 11px;
+}
+
+.pelanggan-product-content h3 {
+    display: -webkit-box;
+    min-height: 42px;
+    margin: 0 0 10px;
+    overflow: hidden;
+    color: #111827;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.4;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+}
+
+.pelanggan-product-price {
+    margin: 0 0 15px;
+    color: #111827;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.pelanggan-product-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 40px;
+    border-radius: 8px;
+    background: #111827;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.pelanggan-product-button:hover {
+    background: #374151;
+    color: #ffffff;
+}
+
+@media (max-width: 1100px) {
+    .pelanggan-dashboard-header {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 18px 20px;
+    }
+
+    .pelanggan-dashboard-nav {
+        width: 100%;
+        overflow-x: auto;
+        padding-bottom: 3px;
+    }
+
+    .pelanggan-dashboard-nav a {
+        flex: 0 0 auto;
+    }
+
+    .pelanggan-product-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .pelanggan-welcome h1 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 850px) {
+    .pelanggan-dashboard {
+        padding: 20px;
+    }
+
+    .pelanggan-welcome {
+        padding: 30px;
+    }
+
+    .pelanggan-stat-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pelanggan-product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .pelanggan-welcome-icon {
+        width: 120px;
+        height: 120px;
+        flex-basis: 120px;
+    }
+
+    .pelanggan-welcome-icon i {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 600px) {
+    .pelanggan-dashboard {
+        padding: 15px;
+    }
+
+    .pelanggan-dashboard-header {
+        padding: 15px;
+    }
+
+    .pelanggan-dashboard-nav {
+        gap: 2px;
+    }
+
+    .pelanggan-dashboard-nav a {
+        min-height: 38px;
+        padding: 0 10px;
+        font-size: 12px;
+    }
+
+    .pelanggan-dashboard-nav a span:not(.pelanggan-nav-badge) {
+        display: none;
+    }
+
+    .pelanggan-welcome {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 25px;
+    }
+
+    .pelanggan-welcome h1 {
+        font-size: 27px;
+    }
+
+    .pelanggan-welcome-icon {
+        display: none;
+    }
+
+    .pelanggan-section-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .pelanggan-product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pelanggan-product-image {
+        height: 280px;
+    }
+}

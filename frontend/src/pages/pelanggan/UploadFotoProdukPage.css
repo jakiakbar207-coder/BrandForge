@@ -1,0 +1,447 @@
+.upload-foto-page {
+    min-height: 100vh;
+    padding: 30px;
+    background: #f8fafc;
+}
+
+.upload-foto-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.upload-foto-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.upload-foto-label {
+    display: block;
+    margin-bottom: 6px;
+    color: #64748b;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.upload-foto-header h1 {
+    margin: 0 0 8px;
+    color: #111827;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.upload-foto-header p {
+    margin: 0;
+    color: #64748b;
+    font-size: 14px;
+}
+
+.upload-foto-back-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 42px;
+    padding: 0 16px;
+    border: 1px solid #dbe1e8;
+    border-radius: 9px;
+    background: #ffffff;
+    color: #475569;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.upload-foto-back-button:hover {
+    border-color: #94a3b8;
+    color: #111827;
+}
+
+.upload-foto-content {
+    display: grid;
+    grid-template-columns: 330px minmax(0, 1fr);
+    gap: 22px;
+    align-items: start;
+}
+
+.upload-foto-product-card {
+    position: sticky;
+    top: 20px;
+    overflow: hidden;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    background: #ffffff;
+    box-shadow: 0 4px 15px rgba(15, 23, 42, 0.04);
+}
+
+.upload-foto-product-image {
+    width: 100%;
+    height: 280px;
+    background: #f1f5f9;
+}
+
+.upload-foto-product-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.upload-foto-product-info {
+    padding: 18px;
+}
+
+.upload-foto-product-info > span {
+    display: block;
+    margin-bottom: 6px;
+    color: #64748b;
+    font-size: 11px;
+}
+
+.upload-foto-product-info h2 {
+    margin: 0 0 8px;
+    color: #111827;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.upload-foto-product-info p {
+    margin: 0;
+    color: #64748b;
+    font-size: 12px;
+}
+
+.upload-foto-form {
+    padding: 25px;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    background: #ffffff;
+    box-shadow: 0 4px 15px rgba(15, 23, 42, 0.04);
+}
+
+.upload-foto-section {
+    margin-bottom: 22px;
+}
+
+.upload-foto-section > label {
+    display: block;
+    margin-bottom: 10px;
+    color: #111827;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.upload-foto-dropzone {
+    position: relative;
+    min-height: 280px;
+    overflow: hidden;
+    border: 2px dashed #cbd5e1;
+    border-radius: 14px;
+    background: #f8fafc;
+    transition: 0.2s ease;
+}
+
+.upload-foto-dropzone:hover {
+    border-color: #94a3b8;
+    background: #f1f5f9;
+}
+
+.upload-foto-dropzone input {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.upload-foto-dropzone-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 280px;
+    padding: 30px;
+    text-align: center;
+}
+
+.upload-foto-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 65px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    background: #e2e8f0;
+    color: #475569;
+    font-size: 28px;
+}
+
+.upload-foto-dropzone-content h3 {
+    margin: 0 0 7px;
+    color: #334155;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.upload-foto-dropzone-content p {
+    margin: 0 0 8px;
+    color: #64748b;
+    font-size: 13px;
+}
+
+.upload-foto-dropzone-content span {
+    color: #94a3b8;
+    font-size: 11px;
+}
+
+.upload-foto-preview {
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    background: #f8fafc;
+}
+
+.upload-foto-preview-image {
+    width: 100%;
+    height: 300px;
+    background: #f1f5f9;
+}
+
+.upload-foto-preview-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.upload-foto-preview-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 15px;
+    border-top: 1px solid #e2e8f0;
+    background: #ffffff;
+}
+
+.upload-foto-preview-info strong {
+    display: block;
+    margin-bottom: 4px;
+    color: #334155;
+    font-size: 13px;
+}
+
+.upload-foto-preview-info span {
+    display: block;
+    max-width: 300px;
+    overflow: hidden;
+    margin-bottom: 3px;
+    color: #64748b;
+    font-size: 11px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.upload-foto-preview-info small {
+    color: #94a3b8;
+    font-size: 10px;
+}
+
+.upload-foto-remove-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    min-height: 35px;
+    padding: 0 12px;
+    border: 1px solid #fecaca;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #dc2626;
+    font-family: inherit;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.upload-foto-remove-button:hover {
+    background: #fef2f2;
+    border-color: #dc2626;
+}
+
+.upload-foto-info-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 24px;
+    padding: 15px;
+    border: 1px solid #dbeafe;
+    border-radius: 11px;
+    background: #eff6ff;
+}
+
+.upload-foto-info-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #dbeafe;
+    color: #2563eb;
+    font-size: 16px;
+}
+
+.upload-foto-info-box strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #1e3a8a;
+    font-size: 12px;
+}
+
+.upload-foto-info-box p {
+    margin: 0 0 7px;
+    color: #475569;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+.upload-foto-info-box ul {
+    margin: 0;
+    padding-left: 17px;
+    color: #64748b;
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+.upload-foto-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 9px;
+}
+
+.upload-foto-cancel-button,
+.upload-foto-submit-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    min-height: 42px;
+    padding: 0 17px;
+    border-radius: 9px;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.upload-foto-cancel-button {
+    border: 1px solid #dbe1e8;
+    background: #ffffff;
+    color: #475569;
+}
+
+.upload-foto-cancel-button:hover {
+    border-color: #94a3b8;
+    color: #111827;
+}
+
+.upload-foto-submit-button {
+    border: 1px solid #111827;
+    background: #111827;
+    color: #ffffff;
+}
+
+.upload-foto-submit-button:hover:not(:disabled) {
+    background: #374151;
+}
+
+.upload-foto-submit-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+@media (max-width: 850px) {
+    .upload-foto-content {
+        grid-template-columns: 1fr;
+    }
+
+    .upload-foto-product-card {
+        position: static;
+    }
+
+    .upload-foto-product-image {
+        height: 250px;
+    }
+}
+
+@media (max-width: 600px) {
+    .upload-foto-page {
+        padding: 20px 15px;
+    }
+
+    .upload-foto-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .upload-foto-header h1 {
+        font-size: 27px;
+    }
+
+    .upload-foto-back-button {
+        width: 100%;
+    }
+
+    .upload-foto-form {
+        padding: 18px;
+    }
+
+    .upload-foto-dropzone {
+        min-height: 240px;
+    }
+
+    .upload-foto-dropzone-content {
+        min-height: 240px;
+        padding: 20px;
+    }
+
+    .upload-foto-preview-image {
+        height: 250px;
+    }
+
+    .upload-foto-preview-info {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .upload-foto-preview-info span {
+        max-width: 100%;
+    }
+
+    .upload-foto-remove-button {
+        width: 100%;
+    }
+
+    .upload-foto-actions {
+        flex-direction: column-reverse;
+    }
+
+    .upload-foto-cancel-button,
+    .upload-foto-submit-button {
+        width: 100%;
+    }
+}

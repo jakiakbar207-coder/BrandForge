@@ -1,0 +1,268 @@
+.brandforge-sidebar {
+    width: 260px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    background: #111827;
+    color: #ffffff;
+    border-right: 1px solid #1f2937;
+    box-shadow: 4px 0 18px rgba(0, 0, 0, 0.08);
+    z-index: 1000;
+    transition: transform 0.25s ease;
+}
+
+.brandforge-sidebar-header {
+    height: 76px;
+    min-height: 76px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: 1px solid #1f2937;
+}
+
+.brandforge-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.brandforge-logo {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: #2563eb;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.brandforge-brand-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.brandforge-brand-name {
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.brandforge-brand-subtitle {
+    margin-top: 3px;
+    color: #9ca3af;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.brandforge-sidebar-body {
+    flex: 1;
+    min-height: 0;
+    padding: 18px 14px 24px;
+    overflow-y: auto;
+}
+
+.brandforge-user-role {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 11px;
+    margin-bottom: 22px;
+    background: #172033;
+    border: 1px solid #1f2937;
+    border-radius: 10px;
+}
+
+.brandforge-user-role-icon {
+    width: 34px;
+    height: 34px;
+    min-width: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background: #1e3a8a;
+    color: #93c5fd;
+    font-size: 15px;
+}
+
+.brandforge-user-role-info {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.brandforge-user-role-name {
+    overflow: hidden;
+    color: #e5e7eb;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1.3;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.brandforge-user-role-label {
+    margin-top: 2px;
+    color: #60a5fa;
+    font-size: 9px;
+    font-weight: 500;
+}
+
+.brandforge-menu-group {
+    margin-bottom: 22px;
+}
+
+.brandforge-menu-group:last-child {
+    margin-bottom: 0;
+}
+
+.brandforge-menu-title {
+    margin: 0 10px 10px;
+    color: #6b7280;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.brandforge-navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.brandforge-menu-item {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 13px;
+    border-radius: 9px;
+    color: #cbd5e1;
+    text-decoration: none;
+    transition:
+        background 0.18s ease,
+        color 0.18s ease,
+        transform 0.18s ease;
+}
+
+.brandforge-menu-item:hover {
+    background: #1e293b;
+    color: #ffffff;
+    transform: translateX(2px);
+}
+
+.brandforge-menu-item.active {
+    background: #2563eb;
+    color: #ffffff;
+    box-shadow: 0 5px 12px rgba(37, 99, 235, 0.22);
+}
+
+.brandforge-menu-icon {
+    width: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.brandforge-menu-text {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.brandforge-menu-item.active .brandforge-menu-text {
+    font-weight: 600;
+}
+
+.brandforge-sidebar-footer {
+    flex-shrink: 0;
+    padding: 16px;
+    border-top: 1px solid #1f2937;
+}
+
+.brandforge-system-status {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 11px;
+    margin-bottom: 14px;
+    background: #172033;
+    border-radius: 9px;
+}
+
+.brandforge-status-dot {
+    width: 8px;
+    height: 8px;
+    min-width: 8px;
+    border-radius: 50%;
+    background: #22c55e;
+    box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.1);
+}
+
+.brandforge-status-info {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.brandforge-status-title {
+    color: #e5e7eb;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.brandforge-status-text {
+    margin-top: 2px;
+    color: #6b7280;
+    font-size: 9px;
+}
+
+.brandforge-footer-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #6b7280;
+    font-size: 10px;
+}
+
+.brandforge-footer-line span:last-child {
+    color: #4b5563;
+}
+
+.brandforge-sidebar-body::-webkit-scrollbar {
+    width: 4px;
+}
+
+.brandforge-sidebar-body::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.brandforge-sidebar-body::-webkit-scrollbar-thumb {
+    background: #374151;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .brandforge-sidebar {
+        width: 230px;
+    }
+
+    .brandforge-sidebar-header {
+        padding: 0 16px;
+    }
+
+    .brandforge-sidebar-body {
+        padding: 16px 10px 20px;
+    }
+}

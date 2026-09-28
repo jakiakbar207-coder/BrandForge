@@ -1,0 +1,294 @@
+.stok-page {
+    width: 100%;
+    min-height: 100%;
+    color: #1e293b;
+}
+
+.stok-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 24px;
+}
+
+.stok-breadcrumb {
+    margin-bottom: 8px;
+    color: #94a3b8;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.stok-header h1 {
+    margin: 0;
+    color: #0f172a;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.stok-header p {
+    margin: 7px 0 0;
+    color: #64748b;
+    font-size: 13px;
+}
+
+.stok-add-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 40px;
+    padding: 0 16px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.stok-add-button:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 12px rgba(37, 99, 235, 0.2);
+}
+
+.stok-add-button:active {
+    transform: translateY(0);
+}
+
+.stok-add-button i {
+    font-size: 14px;
+}
+
+.stok-card {
+    overflow: hidden;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.stok-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 18px 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.stok-search {
+    position: relative;
+    width: 320px;
+}
+
+.stok-search i {
+    position: absolute;
+    top: 50%;
+    left: 13px;
+    z-index: 1;
+    color: #94a3b8;
+    font-size: 14px;
+    transform: translateY(-50%);
+}
+
+.stok-search input {
+    width: 100%;
+    height: 38px;
+    padding: 0 13px 0 36px;
+    border: 1px solid #dbe2ea;
+    border-radius: 8px;
+    outline: none;
+    background: #ffffff;
+    color: #334155;
+    font-size: 13px;
+    box-sizing: border-box;
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.stok-search input::placeholder {
+    color: #a1aab8;
+}
+
+.stok-search input:focus {
+    border-color: #93c5fd;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.08);
+}
+
+.stok-total {
+    color: #64748b;
+    font-size: 12px;
+}
+
+.stok-total strong {
+    color: #1e293b;
+    font-weight: 700;
+}
+
+.stok-action-buttons {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.stok-action-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.stok-action-button:hover {
+    transform: translateY(-1px);
+}
+
+.stok-action-button i {
+    font-size: 13px;
+}
+
+.stok-action-edit {
+    background: #eff6ff;
+    color: #2563eb;
+}
+
+.stok-action-edit:hover {
+    background: #dbeafe;
+}
+
+.stok-action-delete {
+    background: #fef2f2;
+    color: #dc2626;
+}
+
+.stok-action-delete:hover {
+    background: #fee2e2;
+}
+
+.stok-pagination {
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px 0;
+    border-top: 1px solid #e5e7eb;
+}
+
+.stok-form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.stok-form-full {
+    grid-column: 1 / -1;
+}
+
+.stok-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.stok-form-group label {
+    color: #334155;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.stok-form-group label span {
+    margin-left: 3px;
+    color: #dc2626;
+}
+
+.stok-form-group input,
+.stok-form-group select {
+    width: 100%;
+    min-height: 42px;
+    padding: 0 12px;
+    border: 1px solid #dbe2ea;
+    border-radius: 8px;
+    outline: none;
+    background: #ffffff;
+    color: #334155;
+    font-size: 13px;
+    box-sizing: border-box;
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.stok-form-group input::placeholder {
+    color: #a1aab8;
+}
+
+.stok-form-group input:focus,
+.stok-form-group select:focus {
+    border-color: #93c5fd;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.08);
+}
+
+.stok-form-group input:disabled,
+.stok-form-group select:disabled {
+    background: #f8fafc;
+    color: #64748b;
+    cursor: not-allowed;
+}
+
+.stok-form-group small {
+    color: #94a3b8;
+    font-size: 11px;
+}
+
+.stok-loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 300px;
+}
+
+@media (max-width: 768px) {
+    .stok-header {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .stok-add-button {
+        align-self: flex-start;
+    }
+
+    .stok-toolbar {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .stok-search {
+        width: 100%;
+    }
+
+    .stok-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stok-form-full {
+        grid-column: auto;
+    }
+
+    .stok-pagination {
+        justify-content: center;
+        overflow-x: auto;
+    }
+}

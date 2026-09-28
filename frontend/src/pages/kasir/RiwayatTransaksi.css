@@ -1,0 +1,35 @@
+.riwayat-transaksi-page {
+    background: #f8fafc;
+}
+
+.riwayat-summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.riwayat-summary-card {
+    padding: 18px;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    background: #ffffff;
+}
+
+.riwayat-summary-card span {
+    display: block;
+    margin-bottom: 7px;
+    color: #64748b;
+    font-size: 12px;
+}
+
+.riwayat-summary-card strong {
+    color: #0f172a;
+    font-size: 20px;
+}
+
+@media (max-width: 700px) {
+    .riwayat-summary {
+        grid-template-columns: 1fr;
+    }
+}

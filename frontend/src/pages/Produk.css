@@ -1,0 +1,262 @@
+.produk-page {
+    width: 100%;
+    min-height: 100%;
+    color: #1e293b;
+}
+
+.produk-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 24px;
+}
+
+.produk-breadcrumb {
+    margin-bottom: 8px;
+    color: #94a3b8;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.produk-header h1 {
+    margin: 0;
+    color: #0f172a;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.produk-header p {
+    margin: 7px 0 0;
+    color: #64748b;
+    font-size: 13px;
+}
+
+.produk-add-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 40px;
+    padding: 0 16px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.produk-add-button:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 12px rgba(37, 99, 235, 0.2);
+}
+
+.produk-add-button:active {
+    transform: translateY(0);
+}
+
+.produk-add-button i {
+    font-size: 14px;
+}
+
+.produk-card {
+    overflow: hidden;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.produk-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 18px 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.produk-search {
+    position: relative;
+    width: 320px;
+}
+
+.produk-search i {
+    position: absolute;
+    top: 50%;
+    left: 13px;
+    z-index: 1;
+    color: #94a3b8;
+    font-size: 14px;
+    transform: translateY(-50%);
+}
+
+.produk-search input {
+    width: 100%;
+    height: 38px;
+    padding: 0 13px 0 36px;
+    border: 1px solid #dbe2ea;
+    border-radius: 8px;
+    outline: none;
+    background: #ffffff;
+    color: #334155;
+    font-size: 13px;
+    box-sizing: border-box;
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.produk-search input::placeholder {
+    color: #a1aab8;
+}
+
+.produk-search input:focus {
+    border-color: #93c5fd;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.08);
+}
+
+.produk-total {
+    color: #64748b;
+    font-size: 12px;
+}
+
+.produk-total strong {
+    color: #1e293b;
+    font-weight: 700;
+}
+
+.produk-pagination {
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px 0;
+    border-top: 1px solid #e5e7eb;
+}
+
+.produk-form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.produk-form-full {
+    grid-column: 1 / -1;
+}
+
+.produk-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.produk-form-group label {
+    color: #334155;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.produk-form-group label span {
+    margin-left: 3px;
+    color: #dc2626;
+}
+
+.produk-form-group input,
+.produk-form-group select,
+.produk-form-group textarea {
+    width: 100%;
+    border: 1px solid #dbe2ea;
+    border-radius: 8px;
+    outline: none;
+    background: #ffffff;
+    color: #334155;
+    font-size: 13px;
+    box-sizing: border-box;
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.produk-form-group input,
+.produk-form-group select {
+    min-height: 42px;
+    padding: 0 12px;
+}
+
+.produk-form-group textarea {
+    min-height: 100px;
+    padding: 10px 12px;
+    resize: vertical;
+}
+
+.produk-form-group input::placeholder,
+.produk-form-group textarea::placeholder {
+    color: #a1aab8;
+}
+
+.produk-form-group input:focus,
+.produk-form-group select:focus,
+.produk-form-group textarea:focus {
+    border-color: #93c5fd;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.08);
+}
+
+.produk-form-group input:disabled,
+.produk-form-group select:disabled,
+.produk-form-group textarea:disabled {
+    background: #f8fafc;
+    color: #64748b;
+    cursor: not-allowed;
+}
+
+.produk-form-group small {
+    color: #94a3b8;
+    font-size: 11px;
+}
+
+.produk-loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 300px;
+}
+
+@media (max-width: 768px) {
+    .produk-header {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .produk-add-button {
+        align-self: flex-start;
+    }
+
+    .produk-toolbar {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .produk-search {
+        width: 100%;
+    }
+
+    .produk-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .produk-form-full {
+        grid-column: auto;
+    }
+
+    .produk-pagination {
+        justify-content: center;
+        overflow-x: auto;
+    }
+}
