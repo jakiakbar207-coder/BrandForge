@@ -16,7 +16,7 @@ function ConfirmDialog({
 
     return (
         <div className="common-dialog-overlay">
-            <div
+            <div    
                 className="common-confirm-dialog"
                 role="dialog"
                 aria-modal="true"

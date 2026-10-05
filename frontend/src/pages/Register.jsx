@@ -487,7 +487,7 @@ function Register() {
                 <div className="register-footer">
                     © {new Date().getFullYear()} BrandForge
                 </div>
-
+                    
             </div>
         </div>
     );

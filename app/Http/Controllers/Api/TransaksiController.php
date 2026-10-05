@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\DB;
 
 class TransaksiController extends Controller
 {
-    public function index()
+    public function index() 
     {
         $transaksis = Transaksi::with([
             'user',

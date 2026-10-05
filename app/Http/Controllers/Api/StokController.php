@@ -19,7 +19,7 @@ class StokController extends Controller
             'warna'
         ])
         ->latest()
-        ->get();
+        ->get();    
 
         return response()->json($stoks);
     }
